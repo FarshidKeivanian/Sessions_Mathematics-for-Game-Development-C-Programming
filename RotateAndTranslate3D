@@ -1,0 +1,17 @@
+using UnityEngine;
+
+public class MatrixTransformExample : MonoBehaviour
+{
+    void Start()
+    {
+        // Step 1: Define the rotation (90 degrees around Y-axis)
+        Quaternion rotation = Quaternion.Euler(0, 90, 0);
+
+        // Step 2: Define the translation (5 units forward in Z)
+        Vector3 translation = new Vector3(0, 0, 5);
+
+        // Step 3: Apply transformation
+        transform.rotation = rotation;
+        transform.position += translation;
+    }
+}
